@@ -32,7 +32,7 @@ fi
 # Build everything from scratch (rather than any incremental changes)
 # This should always be set to 1 in the Git repo, and buils should always be run with BUILD_CLEAN=1 before pushing.
 # However, it reduces compile time during development to set BUILD_CLEAN=0. 
-BUILD_CLEAN=1
+BUILD_CLEAN=0
 
 # Number of processes
 PROC=$(($(cat /proc/cpuinfo | awk '/^processor/{print $3}' | wc -l)-1))
